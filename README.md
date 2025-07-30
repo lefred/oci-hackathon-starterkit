@@ -1,4 +1,4 @@
-# oci-hackathon-staterkit
+# oci-hackathon-starterkit
 
 Deploy on OCI an always Free environment to start developing an application.
 
