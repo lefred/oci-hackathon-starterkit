@@ -57,10 +57,6 @@ variable "image_id" {
   default     = ""
 }
 
-variable "vm_user" {
-  description = "The SSH user to connect to the master host."
-  default     = "opc"
-}
 
 locals {
   compute_flexible_shapes = [
