@@ -1,6 +1,6 @@
 # oci-hackathon-staterkit
 
-Deploy on OCI am always Free environment to star developing an application.
+Deploy on OCI an always Free environment to start developing an application.
 
 The deployment contains all required network resources (VCN, Subnets, Security Lists, NAT Gateway, Internet Gateway, ...) , a compute instance as application server and an HeatWave MySQL Instance with HeatWave Cluster, Lakehouse and MySQL REST Service (MRS).
 
