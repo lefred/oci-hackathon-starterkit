@@ -61,6 +61,13 @@ variable "image_id" {
 locals {
   compute_flexible_shapes = [
     "VM.Standard.A1.Flex",
+    "VM.Standard.A2.Flex",
+    "VM.Standard.E2.1.Micro",
+    "VM.Standard.E3.Flex",
+    "VM.Standard.E4.Flex",
+    "VM.Standard.E5.Flex",
+    "VM.Standard.E6.Flex",
+    "VM.Standard3.Flex"
   ]
 }
 

@@ -88,9 +88,31 @@ variables:
     description: "Choose number GB for Flex Shape Memory."
     visible:
       and:
-        - eq:
-          - node_shape
-          - "VM.Standard.A1.Flex"
+        -or:
+          - eq:
+            - node_shape
+            - "VM.Standard.A1.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.A2.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.E2.1.Micro"
+          - eq:
+            - node_shape
+            - "VM.Standard.E3.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.E4.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.E5.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.E6.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard3.Flex"
 
   node_flex_shape_ocpus:
     type: number
@@ -103,10 +125,31 @@ variables:
     description: "Choose number of OCPUs for Flex Shape."
     visible:
       and:
-        - eq:
-          - node_shape
-          - "VM.Standard.A1.Flex"
-
+        -or:
+          - eq:
+            - node_shape
+            - "VM.Standard.A1.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.A2.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.E2.1.Micro"
+          - eq:
+            - node_shape
+            - "VM.Standard.E3.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.E4.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.E5.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard.E6.Flex"
+          - eq:
+            - node_shape
+            - "VM.Standard3.Flex"
 
   existing_vcn_ocid:
     type: oci:core:vcn:id

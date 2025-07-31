@@ -17,7 +17,7 @@ resource "oci_mysql_mysql_db_system" "MDSinstance" {
     count = var.existing_mds_instance_id == "" ? 1 : 0
 
     rest {
-        configuration = "ENABLED"
+        configuration = "DEFAULT"
         port          = 443
     }
 
