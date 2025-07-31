@@ -27,7 +27,6 @@ variable "admin_username" {
     default     = "admin"
 }
 
-
 variable "admin_password" {
     description = "Password for the admin user for HeatWave MySQL"
 }
@@ -44,4 +43,3 @@ variable "existing_mds_instance_id" {
   description = "OCID of an existing MDS instance to use"
   default     = ""
 }
-

@@ -15,12 +15,16 @@ resource "oci_mysql_mysql_db_system" "MDSinstance" {
     display_name = var.display_name
 
     count = var.existing_mds_instance_id == "" ? 1 : 0
+    database_management = "DISABLED"
 
     rest {
-        configuration = "DEFAULT"
-        port          = 443
-    }
+		configuration = "DBSYSTEM_ONLY"
+		port = "443"
+	}
 
+    lifecycle {
+        ignore_changes = [mysql_version]
+    }
 }
 
 data "oci_mysql_mysql_db_system" "MDSinstance_to_use" {
